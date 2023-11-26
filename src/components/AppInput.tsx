@@ -34,7 +34,7 @@ export default function AppInput({
         <input
           type={type === "password" && show ? "text" : type}
           id={type}
-          className="bg-light font-body font-light focus:outline focus:outline-1 focus:outline-mainBlue text-mainBlue text-sm md:text-base rounded-lg focus:ring-mainBlue focus:border-mainBlue block w-full pl-4 p-3 pr-10"
+          className="bg-light placeholder:text-gray font-body font-light focus:outline focus:outline-1 focus:outline-mainBlue text-mainBlue text-sm md:text-base rounded-lg focus:ring-mainBlue focus:border-mainBlue block w-full pl-4 p-3 pr-10"
           placeholder={placeholder}
           required
         />

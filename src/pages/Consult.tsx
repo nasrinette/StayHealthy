@@ -16,7 +16,7 @@ export default function Consult() {
             Find a doctor and Consult instantly{" "}
           </AppHeading>
           <img src={booking} alt="img" />
-          <div className="sm:w-96 xl:w-[30rem]">
+          <div className="sm:w-96 rounded-lg xl:w-[30rem]">
             <AppInput
               type="search"
               placeholder="Search doctors, clinics. hospitals, otc..."
