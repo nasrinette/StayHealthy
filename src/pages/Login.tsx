@@ -3,6 +3,7 @@ import background from "../assets/BACKGROUND.svg";
 import image from "../assets/OBJECTS.svg";
 import AppButton from "../components/AppButton";
 import AppInput from "../components/AppInput";
+import AppHeading from "../components/AppHeading";
 
 export default function Login() {
   const navigate = useNavigate();
@@ -15,9 +16,7 @@ export default function Login() {
 
       <div className="flex mt-20  md:mt-32 flex-wrap justify-center xl:justify-between items-center">
         <div className="bg-white p-10 py-20 bg-opacity-20 z-10 w-[50rem] ">
-          <h2 className="md:text-4xl text-3xl font-title font-bold text-white mb-4 md:mb-8">
-            Log in{" "}
-          </h2>
+          <AppHeading className="text-white">Log in </AppHeading>
           <p className="font-body md:text-lg font-light text-light mb-4 md:mb-8">
             Are you a new member?{" "}
             <span

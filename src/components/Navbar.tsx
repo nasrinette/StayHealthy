@@ -20,7 +20,7 @@ const Navbar = () => {
   const menuClasses = isOpen ? "flex flex-col space-y-4" : "hidden";
 
   return (
-    <nav className="bg-gradient-to-r from-light via-light to-white xl:px-20 px-10 z-40 p-3 fixed top-0 left-0 w-full ">
+    <nav className="bg-gradient-to-r from-light  to-white xl:px-20 px-10 z-20 p-3 fixed top-0 left-0 w-full ">
       <div className="container mx-auto flex items-center justify-between">
         <Link to="/" className={` cursor-pointer flex items-center`}>
           <img src={logo} className="lg:w-10 w-8" alt="logo" />
