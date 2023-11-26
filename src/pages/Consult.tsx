@@ -13,7 +13,7 @@ export default function Consult() {
       <div className="relative z-10 xl:px-20 px-10 p-3">
         <div className="pt-28 flex flex-col items-center">
           <AppHeading className="text-mainBlue text-center">
-            Find a doctor and Consult instantly{" "}
+            Find a doctor and Consult instantly
           </AppHeading>
           <img src={booking} alt="img" />
           <div className="sm:w-96 rounded-lg xl:w-[30rem]">
