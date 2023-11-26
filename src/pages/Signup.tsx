@@ -1,9 +1,9 @@
 import { useNavigate } from "react-router-dom";
 import background from "../assets/BACKGROUND.svg";
-import image from "../assets/OBJECTS.svg";
 import AppButton from "../components/AppButton";
 import AppInput from "../components/AppInput";
 import AppHeading from "../components/AppHeading";
+import Illustration from "../components/Illustration";
 
 export default function Signup() {
   const navigate = useNavigate();
@@ -55,9 +55,7 @@ export default function Signup() {
             </AppButton>
           </div>
         </div>
-        <div>
-          <img className="z-20 w-[28rem]" src={image} alt=" " />
-        </div>
+        <Illustration />
       </div>
     </div>
   );

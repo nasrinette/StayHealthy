@@ -39,7 +39,7 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
         <div
-          className={`${menuClasses} md:hidden absolute top-full left-0 right-0 bg-gradient-to-r from-light via-light to-white  shadow-md py-4 px-10`}
+          className={`${menuClasses} md:hidden absolute top-full left-0 right-0 bg-gradient-to-r from-light  to-white  shadow-md py-4 px-10`}
         >
           {links.map((link) => (
             <Link

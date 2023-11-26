@@ -3,7 +3,7 @@ import background from "../assets/service.svg";
 import AppHeading from "../components/AppHeading";
 import AppInput from "../components/AppInput";
 
-export default function Booking() {
+export default function Checkup() {
   return (
     <div className="bg-gradient-to-r from-light to-white relative min-h-screen w-full">
       <div
@@ -13,13 +13,13 @@ export default function Booking() {
       <div className="relative z-10 xl:px-20 px-10 p-3">
         <div className="pt-28 flex flex-col items-center">
           <AppHeading className="text-mainBlue text-center">
-            Find a doctor at your own ease
+            Find a doctor and Consult instantly{" "}
           </AppHeading>
           <img src={booking} alt="img" />
           <div className="sm:w-96 xl:w-[30rem]">
             <AppInput
               type="search"
-              placeholder="Search doctors by specialty..."
+              placeholder="Search doctors, clinics. hospitals, otc..."
             />
           </div>
         </div>
