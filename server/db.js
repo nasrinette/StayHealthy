@@ -1,11 +1,12 @@
 const mongoose = require("mongoose");
-const mongoURI = "mongodb://root:MjMxNi1uYXpyaW5u@127.0.0.1:27017";
+const mongoURI =
+  "mongodb://nazrinnasiro:Njg5LW5henJpbm5h@127.0.0.1:27017/local?directConnection=true&serverSelectionTimeoutMS=2000&authSource=admin&appName=mongosh+2.0.2";
 
 const connectToMongo = async (retryCount) => {
   const MAX_RETRIES = 3;
   const count = retryCount ?? 0;
   try {
-    await mongoose.connect(mongoURI, { dbName: "stayhealthybeta1" });
+    await mongoose.connect(mongoURI, { dbName: "admin" });
     console.info("Connected to Mongo Successfully");
 
     return;
