@@ -1,11 +1,19 @@
+import { FieldValues, useForm } from "react-hook-form";
 import booking from "../assets/booking.svg";
 import background from "../assets/service.svg";
 import AppHeading from "../components/AppHeading";
 import AppInput from "../components/AppInput";
 
 export default function Booking() {
+  const { register, handleSubmit } = useForm();
+  const onSubmit = async (data: FieldValues) => {
+    console.log(data);
+  };
   return (
-    <div className="bg-gradient-to-r from-light to-white relative min-h-screen w-full">
+    <form
+      onSubmit={handleSubmit(onSubmit)}
+      className="bg-gradient-to-r from-light to-white relative min-h-screen w-full"
+    >
       <div
         style={{ backgroundImage: `url(${background})` }}
         className="absolute inset-0 bg-cover bg-center z-10"
@@ -18,12 +26,14 @@ export default function Booking() {
           <img src={booking} alt="img" />
           <div className="sm:w-96 xl:w-[30rem]">
             <AppInput
+              register={register}
+              registerType="search"
               type="search"
               placeholder="Search doctors by specialty..."
             />
           </div>
         </div>
       </div>
-    </div>
+    </form>
   );
 }

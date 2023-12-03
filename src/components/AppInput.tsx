@@ -4,7 +4,7 @@ import { IoMdSearch } from "react-icons/io";
 
 interface AppInputProps {
   type: string;
-  registerType: string;
+  registerType?: string;
   placeholder: string;
   label?: string;
   register?: any;
